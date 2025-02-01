@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Text:700&display=swap');
+
+body {
+    font-family: 'Red Hat Text', sans-serif !important;
+}
+
+/*Background*/
+.cs-bg-image {
+    background: url('../images/pattern-hills.svg') no-repeat bottom center / 100%,
+                url('../images/bg-stars.svg') no-repeat center center / 100%,
+                linear-gradient(180deg, rgba(25,26,36,1) 0%, rgba(30,31,41,1) 100%);
+
+}
+
+/*Font*/
+.cs-ls {
+    letter-spacing: 5px !important;
+}
+
+.cs-fc-red {
+    color: hsl(345, 95%, 68%) !important;
+}
+
+.cs-fc-blue {
+    color: hsl(237, 18%, 59%) !important;
+}
+
+/*Buttons*/
+.cs-btn {
+    color: hsl(237, 18%, 59%) !important;
+    transition: .5s !important;
+}
+
+.cs-btn:hover {
+    color: hsl(345, 95%, 68%) !important;
+}
