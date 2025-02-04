@@ -4,6 +4,10 @@ body {
     font-family: 'Red Hat Text', sans-serif !important;
 }
 
+.cs-w {
+    width: 1000px !important;
+}
+
 /*Background*/
 .cs-bg-image {
     background: url('../images/pattern-hills.svg') no-repeat bottom center / 100%,
@@ -12,13 +16,48 @@ body {
 
 }
 
+.cs-bg-number {
+    position: relative;
+    z-index: 3;
+}
+
+.cs-bg-number::before {
+    position: absolute;
+    content: '';
+    height: 49.5% !important;
+    background-color: hsl(237, 21%, 23%) !important;
+    left: 20%;
+    right: 20%;;
+    top: 0;
+    z-index: -1;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 1px 4px 0px 5px rgba(25,26,36,0.75);
+    -webkit-box-shadow: 1px 4px 0px 5px rgba(25,26,36,0.75);
+    -moz-box-shadow: 1px 4px 0px 5px rgba(25,26,36,0.75);
+}
+
+.cs-bg-number::after {
+    position: absolute;
+    content: '';
+    height: 49.5% !important;
+    background-color: hsl(236, 21%, 26%) !important;
+    left: 20%;
+    right: 20%;;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 1px 4px 0px 5px rgba(25,26,36,0.75);
+    -webkit-box-shadow: 1px 4px 0px 5px rgba(25,26,36,0.75);
+    -moz-box-shadow: 1px 4px 0px 5px rgba(25,26,36,0.75);
+}
+
 /*Font*/
 .cs-ls {
     letter-spacing: 5px !important;
 }
 
 .cs-fc-red {
-    color: hsl(345, 95%, 68%) !important;
+    color: hsla(345, 95%, 68%, 0.75) !important;
 }
 
 .cs-fc-blue {
@@ -33,4 +72,10 @@ body {
 
 .cs-btn:hover {
     color: hsl(345, 95%, 68%) !important;
+}
+
+@media (max-width: 991px) {
+    .cs-w {
+        width: 100% !important;
+    }
 }
