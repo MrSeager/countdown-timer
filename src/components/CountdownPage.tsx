@@ -48,12 +48,14 @@ const CountdownPage: FC = () => {
       
   return (
       <Container fluid className='cs-bg-image min-vh-100 d-flex flex-column align-items-center justify-content-around gap-5'>
-          <h1 className='h2 cs-ls text-white text-uppercase'>We're launching soon</h1>
+          <span className='mt-5 d-flex flex-column align-items-center w-100'>
+          <h1 className='h2 cs-ls text-white text-uppercase text-center my-5'>We're launching soon</h1>
           <Countdown
               date={targetDate}
               renderer={renderer}
               onComplete={handleComplete}
           />
+          </span>
           <ButtonGroup size="lg">
             <Button className='cs-btn bg-transparent border-0'><IoLogoFacebook /></Button>
             <Button className='cs-btn bg-transparent border-0'><IoLogoPinterest /></Button>

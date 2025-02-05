@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { FC, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import { useTransition, animated } from '@react-spring/web';
 
@@ -6,7 +6,7 @@ interface FlipCardProps {
   value: number;
 }
 
-const FlipCard: React.FC<FlipCardProps> = ({ value }) => {
+const FlipCard: FC<FlipCardProps> = ({ value }) => {
   const [current, setCurrent] = useState(value);
 
   useEffect(() => {

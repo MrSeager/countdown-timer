@@ -27,13 +27,15 @@ body {
     height: 49.5% !important;
     background-color: hsl(237, 21%, 23%) !important;
     left: 20%;
-    right: 20%;;
+    right: 20%;
     top: 0;
     z-index: -1;
     border-radius: 10px 10px 0 0;
     box-shadow: 1px 4px 0px 5px rgba(25,26,36,0.75);
     -webkit-box-shadow: 1px 4px 0px 5px rgba(25,26,36,0.75);
     -moz-box-shadow: 1px 4px 0px 5px rgba(25,26,36,0.75);
+
+    /*-webkit-mask-image: radial-gradient(circle at left bottom, transparent 0, transparent 10px, black 11px);*/
 }
 
 .cs-bg-number::after {
@@ -42,7 +44,7 @@ body {
     height: 49.5% !important;
     background-color: hsl(236, 21%, 26%) !important;
     left: 20%;
-    right: 20%;;
+    right: 20%;
     bottom: 0;
     z-index: -1;
     border-radius: 0 0 10px 10px;
@@ -77,5 +79,10 @@ body {
 @media (max-width: 991px) {
     .cs-w {
         width: 100% !important;
+    }
+
+    .cs-bg-number::before, .cs-bg-number::after {
+        left: 5%;
+        right: 5%;
     }
 }
