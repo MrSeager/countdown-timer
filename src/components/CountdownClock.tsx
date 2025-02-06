@@ -19,19 +19,19 @@ const CountdownClock: FC<CountdownClockProps> = ({ days, hours, minutes, seconds
       <Row className='cs-w'>
         <Col xs={3} className='text-center px-0 d-flex flex-column align-items-center justify-content-between gap-3 position-relative'>
           <FlipCard value={days} />
-          <h2 className='h6 cs-fc-blue cs-ls text-uppercase'>Days</h2>
+          <h2 className='ps-1 cs-h7 cs-fc-blue cs-ls text-uppercase'>Days</h2>
         </Col>
         <Col xs={3} className='text-center px-0 d-flex flex-column align-items-center justify-content-between gap-3 position-relative'>
           <FlipCard value={hours} />
-          <h2 className='h6 cs-fc-blue cs-ls text-uppercase'>Hours</h2>
+          <h2 className='ps-1 cs-h7 cs-fc-blue cs-ls text-uppercase'>Hours</h2>
         </Col>
         <Col xs={3} className='text-center px-0 d-flex flex-column align-items-center justify-content-between gap-3 position-relative'>
           <FlipCard value={minutes} />
-          <h2 className='h6 cs-fc-blue cs-ls text-uppercase'>Minutes</h2>
+          <h2 className='ps-1 cs-h7 cs-fc-blue cs-ls text-uppercase'>Minutes</h2>
         </Col>
         <Col xs={3} className='text-center px-0 d-flex flex-column align-items-center justify-content-between gap-3 position-relative'>
           <FlipCard value={seconds} />
-          <h2 className='h6 cs-fc-blue cs-ls text-uppercase'>Seconds</h2>
+          <h2 className='ps-1 cs-h7 cs-fc-blue cs-ls text-uppercase'>Seconds</h2>
         </Col>
       </Row>
     );

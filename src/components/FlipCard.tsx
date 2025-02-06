@@ -24,9 +24,11 @@ const FlipCard: FC<FlipCardProps> = ({ value }) => {
     <Container className="p-0">
       {transitions((style, item) => (
         <animated.div className="w-100 cs-bg-number py-3" style={style}>
+          <span className='cs-top-part' />
           <h2 className="display-1 cs-fc-red m-0">
             {String(item).padStart(2, '0')}
           </h2>
+          <span className='cs-bottom-part' />
         </animated.div>
       ))}
     </Container>
