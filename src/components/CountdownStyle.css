@@ -34,10 +34,6 @@ body {
     box-shadow: 1px 4px 0px 5px hsl(234, 17%, 12%);
     -webkit-box-shadow: 1px 4px 0px 5px hsl(234, 17%, 12%);
     -moz-box-shadow: 1px 4px 0px 5px hsl(234, 17%, 12%);
-
-
- 
-    /*-webkit-mask-image: radial-gradient(circle at right bottom, transparent 0, transparent 10px, black 11px);*/
 }
 
 .cs-top-part::before,
@@ -129,12 +125,34 @@ body {
         width: 100% !important;
     }
 
-    .cs-bg-number::before, .cs-bg-number::after {
-        left: 5%;
-        right: 5%;
+    .cs-top-part, .cs-bottom-part {
+        left: 10%;
+        right: 10%;
     }
 
     .cs-h7 {
         font-size: .4em !important;
+    }
+
+    .cs-bg-image {
+        background: url('../images/pattern-hills.svg') no-repeat bottom center / 250%,
+                    url('../images/bg-stars.svg') no-repeat center center / auto 100%,
+                    linear-gradient(180deg, rgba(25,26,36,1) 0%, rgba(30,31,41,1) 100%);
+    
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .cs-top-part, .cs-bottom-part {
+        left: 10%;
+        right: 10%;
+    }
+}
+
+@media (max-width: 575px) {
+    .cs-top-part, .cs-bottom-part {
+        left: 5%;
+        right: 5%;
     }
 }
